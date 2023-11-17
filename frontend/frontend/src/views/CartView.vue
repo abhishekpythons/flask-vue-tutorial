@@ -239,7 +239,7 @@ export default {
   methods: {
     //get function
     getProducts() {
-      const path = "http://127.0.0.1:5000/products";
+      const path = "https://vue-tutorial-backend.onrender.com/products";
       axios
         .get(path)
         .then((res) => {
@@ -251,7 +251,7 @@ export default {
     },
     //post function
     addProduct(payload) {
-      const path = "http://127.0.0.1:5000/products";
+      const path = "https://vue-tutorial-backend.onrender.com/products";
       axios
         .post(path, payload)
         .then((res) => {
@@ -318,7 +318,7 @@ export default {
     },
 
     updateProduct(payload, productID) {
-      const path = `http://127.0.0.1:5000/products/${productID}`;
+      const path = `https://vue-tutorial-backend.onrender.com/${productID}`;
       axios
         .put(path, payload)
         .then((res) => {
@@ -333,7 +333,7 @@ export default {
     },
 
     removeProduct(productID) {
-      const path = `http://127.0.0.1:5000/products/${productID}`;
+      const path = `https://vue-tutorial-backend.onrender.com/${productID}`;
       axios
         .delete(path)
         .then((res) => {
