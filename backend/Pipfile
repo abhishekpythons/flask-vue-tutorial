@@ -7,6 +7,9 @@ name = "pypi"
 flask = "==2.0.1"
 flask-cors = "==3.0.10"
 werkzeug = "==2.2"
+flask-sqlalchemy = "*"
+sqlalchemy = "==1.4.50"
+flask-login = "*"
 
 [dev-packages]
 
